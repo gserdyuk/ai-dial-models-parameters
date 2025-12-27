@@ -1,0 +1,58 @@
+C:\home\ai-epam-course1\ai-dial-models-parameters\task>python3 8-task-stop.py
+Type your question or 'exit' to quit.
+> Explain the key components of a Large Language Model architecture
+AI:
+
+================================================== REQUEST ==================================================
+?? Endpoint: https://ai-proxy.lab.epam.com/openai/deployments/gpt-4o/chat/completions
+
+?? Headers:
+  api-key: dial-xnp...p7kh
+  Content-Type: application/json
+
+?? Request Body:
+  Messages:
+    [1] SYSTEM: You are an assistant who answers concisely and informatively.
+    [2] USER: Explain the key components of a Large Language Model architecture
+
+  Parameters:
+    stop:
+
+
+===========================================================================================================
+
+================================================== RESPONSE ==================================================
+Large Language Models (LLMs) are deep neural networks, typically based on transformer architectures, designed to process and generate human-like text. The key components of their architecture are:
+============================================================================================================
+> exit
+Exiting the chat. Goodbye!
+Type your question or 'exit' to quit.
+> Explain the key components of a Large Language Model architecture
+AI:
+
+================================================== REQUEST ==================================================
+?? Endpoint: https://ai-proxy.lab.epam.com/openai/deployments/gpt-4o/chat/completions
+
+?? Headers:
+  api-key: dial-xnp...p7kh
+  Content-Type: application/json
+
+?? Request Body:
+  Messages:
+    [1] SYSTEM: You are an assistant who answers concisely and informatively.
+    [2] USER: Explain the key components of a Large Language Model architecture
+
+  Parameters:
+    stop: ['**Embedding Layer**', '**Transformer Blocks**', '**Training**']
+===========================================================================================================
+
+================================================== RESPONSE ==================================================
+A Large Language Model (LLM) architecture consists of several key components designed to understand and generate human-like text. Below are the primary components:
+
+1. **Embedding Layers**:
+   - Maps input tokens (words, subwords, or characters) to dense numerical vectors in a high-dimensional space. These embeddings capture semantic relationships between tokens.
+
+2.
+============================================================================================================
+> exit
+Exiting the chat. Goodbye!

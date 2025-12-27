@@ -1,0 +1,141 @@
+> Name a random animal
+AI:
+
+================================================== REQUEST ==================================================
+?? Endpoint: https://ai-proxy.lab.epam.com/openai/deployments/gpt-4o/chat/completions
+
+?? Headers:
+  api-key: dial-xnp...p7kh
+  Content-Type: application/json
+
+?? Request Body:
+  Messages:
+    [1] SYSTEM: You are an assistant who answers concisely and informatively.
+    [2] USER: Name a random animal
+
+  Parameters:
+    n: 5
+    seed: 42
+===========================================================================================================
+
+================================================== RESPONSE ==================================================
+{
+  "choices": [
+    {
+      "content_filter_result": {
+        "error": {
+          "code": "content_filter_error",
+          "message": "The contents are not filtered"
+        }
+      },
+      "content_filter_results": {},
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "Axolotl",
+        "refusal": null,
+        "role": "assistant"
+      }
+    },
+    {
+      "content_filter_result": {
+        "error": {
+          "code": "content_filter_error",
+          "message": "The contents are not filtered"
+        }
+      },
+      "content_filter_results": {},
+      "finish_reason": "stop",
+      "index": 1,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "Okapi",
+        "refusal": null,
+        "role": "assistant"
+      }
+    },
+    {
+      "content_filter_result": {
+        "error": {
+          "code": "content_filter_error",
+          "message": "The contents are not filtered"
+        }
+      },
+      "content_filter_results": {},
+      "finish_reason": "stop",
+      "index": 2,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "Okapi.",
+        "refusal": null,
+        "role": "assistant"
+      }
+    },
+    {
+      "content_filter_result": {
+        "error": {
+          "code": "content_filter_error",
+          "message": "The contents are not filtered"
+        }
+      },
+      "content_filter_results": {},
+      "finish_reason": "stop",
+      "index": 3,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "Axolotl.",
+        "refusal": null,
+        "role": "assistant"
+      }
+    },
+    {
+      "content_filter_result": {
+        "error": {
+          "code": "content_filter_error",
+          "message": "The contents are not filtered"
+        }
+      },
+      "content_filter_results": {},
+      "finish_reason": "stop",
+      "index": 4,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "Okapi",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1766793272,
+  "id": "chatcmpl-CrBvcQGISMvFdihnlsEGEPUlTBG3w",
+  "model": "gpt-4o-2024-11-20",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "content_filter_results": {},
+      "prompt_index": 0
+    }
+  ],
+  "system_fingerprint": "fp_b54fe76834",
+  "usage": {
+    "completion_tokens": 19,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens": 28,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "total_tokens": 47
+  }
+}

@@ -13,6 +13,9 @@ run(
     # TODO:
     #  1. Use `seed` parameter with value 42 (or whatever you want)
     #  2. Use `n` parameter with value 5
+
+    n=5,
+    seed=42
 )
 
 # Check the content in choices. The expected result is that in almost all choices the result will be the same.

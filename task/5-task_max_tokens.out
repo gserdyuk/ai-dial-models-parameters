@@ -1,0 +1,149 @@
+:\home\ai-epam-course1\ai-dial-models-parameters\task>python3 5-task-max_tokens.py
+Type your question or 'exit' to quit.
+> What is token when we are working with LLM?
+AI:
+
+================================================== REQUEST ==================================================
+?? Endpoint: https://ai-proxy.lab.epam.com/openai/deployments/gpt-4o/chat/completions
+
+?? Headers:
+  api-key: dial-xnp...p7kh
+  Content-Type: application/json
+
+?? Request Body:
+  Messages:
+    [1] SYSTEM: You are an assistant who answers concisely and informatively.
+    [2] USER: What is token when we are working with LLM?
+
+  Parameters:
+    max_tokens: 10
+===========================================================================================================
+
+================================================== RESPONSE ==================================================
+{
+  "choices": [
+    {
+      "content_filter_result": {
+        "error": {
+          "code": "content_filter_error",
+          "message": "The contents are not filtered"
+        }
+      },
+      "content_filter_results": {},
+      "finish_reason": "length",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "In the context of large language models (LLMs",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1766856395,
+  "id": "chatcmpl-CrSLjpsbTVMvgrOxsaBlDeZB5jMQ0",
+  "model": "gpt-4o-2024-11-20",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "content_filter_results": {},
+      "prompt_index": 0
+    }
+  ],
+  "system_fingerprint": "fp_b54fe76834",
+  "usage": {
+    "completion_tokens": 10,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens": 35,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "total_tokens": 45
+  }
+}
+============================================================================================================
+> exit
+Exiting the chat. Goodbye!
+
+C:\home\ai-epam-course1\ai-dial-models-parameters\task>python3 5-task-max_tokens.py
+Type your question or 'exit' to quit.
+> What is token when we are working with LLM?
+AI:
+
+================================================== REQUEST ==================================================
+?? Endpoint: https://ai-proxy.lab.epam.com/openai/deployments/gpt-4o/chat/completions
+
+?? Headers:
+  api-key: dial-xnp...p7kh
+  Content-Type: application/json
+
+?? Request Body:
+  Messages:
+    [1] SYSTEM: You are an assistant who answers concisely and informatively.
+    [2] USER: What is token when we are working with LLM?
+===========================================================================================================
+
+================================================== RESPONSE ==================================================
+{
+  "choices": [
+    {
+      "content_filter_result": {
+        "error": {
+          "code": "content_filter_error",
+          "message": "The contents are not filtered"
+        }
+      },
+      "content_filter_results": {},
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "In the context of large language models (LLMs), like OpenAI's GPT, a **token** is a unit of text that the model processes. 
+Tokens can be as short as one character or as long as one word, depending on the text and how it's broken down. For example:\n\n- The word \"apple\" is 
+typically one token.\n- A space or punctuation mark can also count as a token.\n- Long or complex words (e.g., \"artificially\") may be split into 
+multiple tokens.\n\nLLMs read and generate text in token form. The number of tokens in your input and output determines processing costs and 
+limitations, such as token limits (e.g., GPT-4 has limits on how many tokens it can process in a single input/output).\n\n**Rule of thumb:
+** 1 token \u2248 4 characters in English, or about \u00be of a word.",
+        "refusal": null,
+        "role": "assistant"
+
+      }
+    }
+  ],
+  "created": 1766856447,
+  "id": "chatcmpl-CrSMZ2qjAi2IYYXsPNdmn4j0PHXAi",
+  "model": "gpt-4o-2024-11-20",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "content_filter_results": {},
+      "prompt_index": 0
+    }
+  ],
+  "system_fingerprint": "fp_b54fe76834",
+  "usage": {
+    "completion_tokens": 180,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens": 35,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "total_tokens": 215
+  }
+}
+============================================================================================================
+>
